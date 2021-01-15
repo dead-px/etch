@@ -1,6 +1,6 @@
 
 const container = document.body.querySelector('#container');
-
+const div1 = document.querySelector('div1');
 
 function createGrid(){
     let num = 8;
@@ -13,6 +13,7 @@ function createGrid(){
             container.style.gridTemplateColumns = `repeat(${num}, 1fr)`;
             container.style.gridTemplateRows = `repeat(${num}, 1fr)`;
             container.appendChild(divRow);
+
     }
 } 
 function newGrid(){
@@ -26,21 +27,45 @@ function newGrid(){
         newGrid();
     } 
     else {
+        reset();
         const area = num*num;
         for (i = 1; i <= area; i++){
             const divRow = document.createElement('div1');
-        
             divRow.className = "divgrid";
             container.style.gridTemplateColumns = `repeat(${num}, 1fr)`;
             container.style.gridTemplateRows = `repeat(${num}, 1fr)`;
             container.appendChild(divRow);
+
     }
 }
 } 
-window.addEventListener('DOMContentLoaded', (event) => {
+
+
+container.addEventListener('mouseover', function (m) {
+
+    if (m.target.matches('.divgrid')) {
+        m.target.style.backgroundColor = '#f4f4f4';
+    }
+  });
+// const reset = document.getElementById('reset');
+// reset.addEventListener('click', function (e) {
+//         const grid = document.body.querySelector('div1');
+//         for (let i = 0; i < 100; i++){
+//             grid[i].style.backgroundColor = "#0e0e0e";
+//         }
+//   });
+
+function reset(){
+
+    const grid = document.getElementsByClassName('divgrid');
+    for (let i = 0; i < grid.length; i++){
+        grid[i].style.backgroundColor = '#0e0e0e';
+    }
+
+}
+
+  window.addEventListener('DOMContentLoaded', (event) => {
+ 
     createGrid();
+
 });
-
-
-
-

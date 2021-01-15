@@ -37,11 +37,19 @@ h1 {
     -moz-transition:0.1s ease;
     -webkit-transition:0.1s ease;
 }
-button {
+/* .divgrid:active{
+    background-color:#fff;
+
+} */
+
+#btn{
     margin-bottom:15px;
     position:absolute;
     right:30.2%;
     top:6%;
+ 
+}
+button {
     background-color: #25485870; /* Green */
     border-style:outset;
     border-width:2px;
