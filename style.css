@@ -17,7 +17,7 @@ h1 {
 }
 #container{
     position:absolute;
-    left:28%;
+    left:29%;
     top:10%;
     width: 800px;
     height:800px;
@@ -45,8 +45,8 @@ h1 {
 #btn{
     margin-bottom:15px;
     position:absolute;
-    right:28%;
-    top:4%;
+    right:29%;
+    top:5%;
  
 }
 button {
