@@ -11,13 +11,13 @@ h1 {
     position:absolute;
     display:inline-block;
     left:30%;
-    top:4%;
+    top:3%;
     color:#f4f4f4;
     text-decoration:underline;
 }
 #container{
     position:absolute;
-    left:30%;
+    left:28%;
     top:10%;
     width: 800px;
     height:800px;
@@ -45,8 +45,8 @@ h1 {
 #btn{
     margin-bottom:15px;
     position:absolute;
-    right:30.2%;
-    top:6%;
+    right:28%;
+    top:4%;
  
 }
 button {
