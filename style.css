@@ -19,7 +19,7 @@ h1 {
     position:absolute;
     left:25%;
     top:10%;
-    widows: 800px;
+    width: 800px;
     height:800x;
     background-color: #fff;
     display:grid;
