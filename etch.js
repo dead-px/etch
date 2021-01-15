@@ -47,13 +47,6 @@ container.addEventListener('mouseover', function (m) {
         m.target.style.backgroundColor = '#f4f4f4';
     }
   });
-// const reset = document.getElementById('reset');
-// reset.addEventListener('click', function (e) {
-//         const grid = document.body.querySelector('div1');
-//         for (let i = 0; i < 100; i++){
-//             grid[i].style.backgroundColor = "#0e0e0e";
-//         }
-//   });
 
 function reset(){
 
